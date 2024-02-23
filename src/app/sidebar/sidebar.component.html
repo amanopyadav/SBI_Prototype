@@ -1,0 +1,33 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+        <div class="image-container">
+            <img src="assets/sbi.png" class="sbi-logo" alt="...">
+        </div>
+        <hr class="hr-spacing">
+        <mat-icon class="account_icon" fontIcon="account_circle"></mat-icon>
+        <hr class="hr-spacing">
+        <mat-nav-list class="custom-nav-list">
+            <mat-expansion-panel class="custom-expansion-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title style="color: white;">
+                        <span>Proposal Details</span>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list style="color: white;">
+                    <p>
+                        <a mat-list-item href="#">Client Roles</a>
+                        <a mat-list-item href="#">Proposal Details</a>
+                        <a mat-list-item href="#">Plan Details</a>
+                        <a mat-list-item href="#">Medical Details</a>
+                        <a mat-list-item href="#">Other Insurance</a>
+                        <a mat-list-item href="#">Bank Details</a>
+                    </p>
+                </mat-list>
+            </mat-expansion-panel>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <router-outlet>
+
+    </router-outlet>
+</mat-sidenav-container>

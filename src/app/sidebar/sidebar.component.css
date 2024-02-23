@@ -1,0 +1,49 @@
+.mat-sidenav-container {
+    height: 100%; 
+    background-color: rgba(255, 255, 255, 0.247);
+}  
+
+.image-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    width: 12rem;
+    height: 3rem;
+}
+
+.account_icon {
+    color: blue;
+}
+
+.hr-spacing {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.mat-nav-list {
+    margin-top: 4px;
+}
+
+.custom-nav-list {
+    margin-top: 4px; /* Adjust spacing */
+    
+}
+
+.custom-expansion-panel {
+    background-color: rgb(42, 7, 123); /* Set background color */
+    border-radius: 8px; /* Adjust border radius as needed */
+}
+
+.custom-expansion-panel .mat-expansion-panel-header {
+    padding: 8px 16px; /* Adjust padding as needed */
+
+}
+
+.custom-expansion-panel .mat-panel-title {
+    font-weight: bold; /* Optionally adjust font styles */
+}
+
+.mat-sidenav-container .mat-nav-list a.mat-list-item {
+    color: white !important;
+}
+
