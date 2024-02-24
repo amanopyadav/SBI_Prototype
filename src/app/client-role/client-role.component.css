@@ -1,0 +1,69 @@
+.details-card {
+    padding: 1px; /* Adjust padding as needed */
+}
+
+.label-value-pair,
+.primary-details,
+.plan-details,
+.small-card {
+    margin-bottom: 10px; 
+}
+.mail_text{
+    position:sticky; 
+    margin-left: 10px;
+}
+.phone_text{
+     position: sticky; 
+    margin-left: 10px;
+}
+.calender_text{
+    position: sticky; 
+    margin-left: 10px;
+}
+.purple-text {
+    font-size: 10px;
+    color:darkmagenta;
+}
+.purple-text1{
+    font-size:10px;
+}
+.card{
+    height: auto;
+}
+.mail_text{
+    font-size: 10px;
+}
+.phone_text{
+    font-size: 10px;
+}
+.calender_text{
+    font-size: 10px;
+}
+mat-icon{
+    color: darkmagenta;
+}
+.purple-text1{
+    color: darkmagenta;
+}
+.small-card{
+    margin: auto;
+    background-color: rgb(128, 0, 43);
+    margin-top: -10px;
+}
+.square-box {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-image: url('../../assets/sunflower.jpeg'); /* Path to your image */
+    background-size: cover; /* Adjust to fit the box */
+    border: 2px solid black; /* Set border */
+    margin-top: 5px; /* Adjust margin as needed */
+    margin-right: 10px; /* Adjust margin to shift left */
+    border-color: rgb(128, 0, 43);
+}
+.square-box2{
+    width: 100px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    border: 2px solid black; /* Set border */
+    margin-top: 120px; /* Adjust margin as needed */
+    border-color: rgb(128, 0, 43);
+}
