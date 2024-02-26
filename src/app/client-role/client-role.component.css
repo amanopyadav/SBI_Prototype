@@ -41,6 +41,7 @@
 }
 mat-icon{
     color: darkmagenta;
+    font-size: 22px;
 }
 .purple-text1{
     color: darkmagenta;
@@ -66,4 +67,21 @@ mat-icon{
     border: 2px solid black; /* Set border */
     margin-top: 120px; /* Adjust margin as needed */
     border-color: rgb(128, 0, 43);
+}
+
+
+/* Modifications */
+.table {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+.table td,
+.table th {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.custom-size {
+    flex: 0 0 10%; /* 10% width for medium screens and above */
+    max-width: 10%;
 }
