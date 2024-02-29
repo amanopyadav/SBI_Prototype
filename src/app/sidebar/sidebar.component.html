@@ -1,5 +1,5 @@
 <mat-sidenav-container>
-    <mat-sidenav mode="side" opened>
+    <mat-sidenav #sidenav mode="side">
         <div class="image-container">
             <img src="assets/sbi.png" class="sbi-logo" alt="...">
         </div>
@@ -10,24 +10,27 @@
             <mat-expansion-panel class="custom-expansion-panel">
                 <mat-expansion-panel-header>
                     <mat-panel-title style="color: white;">
-                        <span>Proposal Details</span>
+                        <span><b>Proposal Details</b></span>
                     </mat-panel-title>
                 </mat-expansion-panel-header>
-                <mat-list style="color: white;">
+                <mat-list style="color: white; line-height: 2;">
                     <p>
-                        <a mat-list-item href="#">Client Roles</a>
-                        <a mat-list-item href="#">Proposal Details</a>
-                        <a mat-list-item href="#">Plan Details</a>
-                        <a mat-list-item href="#">Medical Details</a>
-                        <a mat-list-item href="#">Other Insurance</a>
-                        <a mat-list-item href="#">Bank Details</a>
+                        <a class="menu-link" href="#">Client Roles</a><br>
+                        <a class="menu-link" href="#">Proposal Details</a><br>
+                        <a class="menu-link" href="#">Plan Details</a><br>
+                        <a class="menu-link" href="#">Medical Details</a><br>
+                        <a class="menu-link" href="#">Other Insurance</a><br>
+                        <a class="menu-link" href="#">Bank Details</a><br>
                     </p>
                 </mat-list>
             </mat-expansion-panel>
         </mat-nav-list>
     </mat-sidenav>
 
-    <router-outlet>
-
-    </router-outlet>
+    <mat-sidenav-content>
+        <button mat-icon-button  (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
 </mat-sidenav-container>

@@ -21,12 +21,17 @@
     margin-left: 10px;
 }
 .purple-text {
-    font-size: 10px;
-    color:darkmagenta;
+    font-size: 9px;
+    color:rgb(128, 0, 43);
+    line-height: 1;
+
 }
-.purple-text1{
-    font-size:10px;
+.purple-text1 {
+    font-size: 8px;
+    color: rgb(128, 0, 43);
+    line-height: 0.1; /* Adjust the value as needed */
 }
+
 .card{
     height: auto;
 }
@@ -40,17 +45,27 @@
     font-size: 10px;
 }
 mat-icon{
-    color: darkmagenta;
+    /* color: rgb(128, 0, 43); */
     font-size: 22px;
 }
-.purple-text1{
-    color: darkmagenta;
-}
-.small-card{
-    margin: auto;
+.small-card1 {
+    margin: 0 auto; /* Center the card horizontally */
     background-color: rgb(128, 0, 43);
-    margin-top: -10px;
+    margin-top: -16px; /* Adjust to touch the top border of the main card */
+    margin-bottom: -16px; /* Adjust to touch the bottom border of the main card */
+    height: auto;
+    width: auto;
 }
+
+.small-card2 {
+    margin: 0 auto; /* Center the card horizontally */
+    background-color: rgb(128, 0, 43);
+    margin-top: -16px; /* Adjust to touch the top border of the main card */
+    margin-bottom: -16px; /* Adjust to touch the bottom border of the main card */
+    height: auto;
+    width: auto;
+}
+
 .square-box {
     width: 100px; /* Adjust width as needed */
     height: 100px; /* Adjust height as needed */
@@ -61,6 +76,17 @@ mat-icon{
     margin-right: 10px; /* Adjust margin to shift left */
     border-color: rgb(128, 0, 43);
 }
+.square-box1{
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-image: url('../../assets/sunflower.jpeg'); /* Path to your image */
+    background-size: cover; /* Adjust to fit the box */
+    border: 2px solid black; /* Set border */
+    margin-top: 5px; /* Adjust margin as needed */
+    margin-left: 10px;
+    border-color: rgb(128, 0, 43);
+    padding: 10px;
+}
 .square-box2{
     width: 100px; /* Adjust width as needed */
     height: 40px; /* Adjust height as needed */
@@ -68,20 +94,145 @@ mat-icon{
     margin-top: 120px; /* Adjust margin as needed */
     border-color: rgb(128, 0, 43);
 }
-
-
-/* Modifications */
-.table {
-    background-color: transparent !important;
-    border-bottom: none !important;
-}
-.table td,
-.table th {
-    background-color: transparent !important;
-    border: none !important;
+.image-container {
+    height: 100%; /* Ensure the container fills the height of the card */
+    overflow-y: auto; /* Add a vertical scrollbar if necessary */
 }
 
-.custom-size {
-    flex: 0 0 10%; /* 10% width for medium screens and above */
-    max-width: 10%;
+.image-container img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
 }
+.down_card1{
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.down_card2{
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.down_card1_icons {
+    margin-left: 30px;
+}
+.down_card2_icons {
+    margin-left: 30px;
+}
+.icon-row {
+    display: flex; /* Display the icons in a row */
+    justify-content: space-around; /* Center the icons with equal space around them */
+    align-items: center; /* Center the icons vertically */
+}
+
+/* Adjust the styling for each container as needed */
+.rule-book-container,
+.cancel-container,
+.submit-container {
+    text-align: center; /* Center the text */
+}
+.cancel-container{
+    margin-right: 10px;
+}
+.submit-container{
+    margin-right: 10px;
+
+}
+.content-container-tc{
+    font-size: 10px;
+    line-height: 1;
+}
+.text-container-tc2{
+    font-size: 10px;
+    line-height: 1;
+    padding: 10px;
+}
+.card-content-d1{
+    font-size: 10px;
+}
+.card-content-d2{
+    font-size: 10px;
+}
+.Top.card3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: rgb(128, 0, 43);;
+  }
+.nominee-1{
+    height: 30px; /* Set the desired height */
+    width: 80px; /* Set the desired width */
+    top: 10%; /* Set the desired top position */
+    left: 50%; /* Set the desired left position */
+    transform: translate(-50%, -50%); /* Center the card horizontally and vertically */
+    align-items: center;
+    background-color: darkgray;
+}
+.nominee-2{
+    height: 30px; /* Set the desired height */
+    width: 80px; /* Set the desired width */
+    top: 10%; /* Set the desired top position */
+    left: 50%; /* Set the desired left position */
+    transform: translate(-50%, -50%); /* Center the card horizontally and vertically */
+    align-items: center;
+    background-color: darkgray;
+}
+.position-relative {
+    position: relative;
+}
+
+.nominee-1 {
+    position: absolute;
+    top: -15px; /* Adjust the value as needed */
+    left: 10;
+    z-index: 1; /* Ensure the card appears above other content */
+}
+.position-relative {
+    position: relative;
+}
+
+.nominee-2 {
+    position: absolute;
+    top: -15px; /* Adjust the value as needed */
+    left: 10;
+    z-index: 1; /* Ensure the card appears above other content */
+}
+.back-container{
+    background-color: rgba(211, 211, 211, 0.318);
+}
+.text-container{
+    padding: 10px;
+}
+@media screen and (max-width: 1024px) {
+    .col-md-2 .text-container2 {
+        margin-top: 90px;
+    }
+
+    .small-card1 {
+        width: 115px;
+        height: auto;
+    }
+
+    .small-card2 {
+        margin-top: 10px;
+        width: 115px;
+        height: auto;
+    }
+    .happy-face1 {
+        width: 80px;
+    }
+    .happy-face2 {
+        width: 80px;
+    }
+ 
+}
+
+
+
